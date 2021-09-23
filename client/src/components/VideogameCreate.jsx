@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { postVideogame, getGenres } from '../actions/index'
 import { useDispatch, useSelector } from 'react-redux';
 import styles from '../Styles/VideogameCreate.module.css';
-import videoback from '../media/videoback.mp4'
+import formV from '../media/formV.mp4'
 
 function validate(input) {
     let errors = {};
@@ -136,7 +136,7 @@ export default function VideoGameCreate() {
             </div>
 
             <video autoPlay loop muted className={styles.video}>
-                <source src={videoback} type="video/mp4" /> 
+                <source src={formV} type="video/mp4" /> 
                 {/* video con menor resolucion */}
             </video>
             <div className={styles.father}>

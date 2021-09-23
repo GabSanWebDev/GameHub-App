@@ -5,7 +5,7 @@ import { getDetails } from '../actions/index';
 import { useEffect } from 'react';
 import { resetDetail } from '../actions/index'
 import loading from '../media/loading.jpg'
-import videoback from '../media/videoback.mp4'
+import detailV from '../media/detailV.mp4'
 import styles from '../Styles/Detail.module.css'
 import notFound from '../media/notFound.png'
 
@@ -38,7 +38,7 @@ export default function Detail(props) {
 
             </div>
             <video autoPlay loop muted className={styles.video}>
-                <source src={videoback} type="video/mp4" />
+                <source src={detailV} type="video/mp4" />
                   {/* video con menor resolucion */}
             </video>
 
